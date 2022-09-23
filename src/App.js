@@ -1,5 +1,6 @@
 import "./App.css";
 import Bibliotheque from "./components/Bibliotheque";
+import Header from "./components/Header";
 
 const livres = [
   {
@@ -67,6 +68,7 @@ const livres = [
 function App() {
   return (
     <div className="container">
+      <Header />
      <Bibliotheque listelivres={livres}/>
     </div>
   );
